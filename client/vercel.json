@@ -1,10 +1,12 @@
 {
-  "framework": "vite",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!assets|favicon).*)",
-      "destination": "/index.html"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
-
